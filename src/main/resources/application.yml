@@ -1,6 +1,6 @@
 spring:
-  active:
-    profile: EN,cat,qa
+  profiles:
+    active: EN,cat,dev
 guru:
   name: ymlSuperuser
   password: ymlDBPassword
