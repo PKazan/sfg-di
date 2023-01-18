@@ -5,3 +5,11 @@ guru:
   name: ymlSuperuser
   password: ymlDBPassword
   jdbcurl: ymlSomeUrlforDB
+
+---
+spring:
+  profiles: prod
+guru:
+  name: ymlProdSuperuser
+  password: ymlProdDBPassword
+  jdbcurl: ymlProdSomeUrlforDB
