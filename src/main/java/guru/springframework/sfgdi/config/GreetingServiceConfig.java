@@ -6,7 +6,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
-import org.springframework.context.annotation.PropertySource;
 
 import com.springframework.pets.PetService;
 import com.springframework.pets.PetServiceFactory;
@@ -22,7 +21,6 @@ import guru.springframework.sfgdi.services.PropertyInjectedGreetingServiceImpl;
 import guru.springframework.sfgdi.services.SetterInjectedGreetingService;
 
 @Configuration
-@PropertySource("classpath:datasource.properties")
 @ImportResource("classpath:sfgdi-config.xml")
 public class GreetingServiceConfig {
 
@@ -76,7 +74,7 @@ public class GreetingServiceConfig {
         return new PrimaryInjectedGreetingService();
     }
 
-//    @Bean
+    //    @Bean
     ConstructorInjectedGreetingService constructorInjectedGreetingService() {
         return new ConstructorInjectedGreetingService();
     }
